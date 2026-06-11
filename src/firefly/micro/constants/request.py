@@ -1,0 +1,8 @@
+"""Firefly 授权动作的请求方法常量。"""
+
+# HTTP/gRPC 授权动作字符串与 authz 注入的 api_method 保持同一套枚举。
+REQUEST_METHOD_GET = "GET"
+REQUEST_METHOD_POST = "POST"
+REQUEST_METHOD_PUT = "PUT"
+REQUEST_METHOD_DELETE = "DELETE"
+REQUEST_METHOD_GRPC = "GRPC"
