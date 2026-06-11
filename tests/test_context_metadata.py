@@ -7,10 +7,10 @@ from datetime import UTC, datetime, timedelta
 import pytest
 from cryptography.hazmat.primitives.asymmetric.ed25519 import Ed25519PrivateKey
 
-from firefly_micro import constants
-from firefly_micro.authz import AuthzSignVerificationOptions
-from firefly_micro.metadata import prepare_outgoing_authority_metadata
-from firefly_micro.service_context import BuildContextOptions, build_context
+from firefly.micro import constants
+from firefly.micro.authz import AuthzSignVerificationOptions
+from firefly.micro.metadata import prepare_outgoing_authority_metadata
+from firefly.micro.service_context import BuildContextOptions, build_context
 
 
 class Provider:

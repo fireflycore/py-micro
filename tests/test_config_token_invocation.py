@@ -4,9 +4,9 @@ from datetime import UTC, datetime, timedelta
 
 import pytest
 
-from firefly_micro.authz import CachedServiceAuthorityProvider, ServiceAuthorityToken
-from firefly_micro.config import RawConfig, decode_payload, encode_payload, marshal_payload, unmarshal_payload
-from firefly_micro.invocation import DNS, RemoteServiceRegistry
+from firefly.micro.authz import CachedServiceAuthorityProvider, ServiceAuthorityToken
+from firefly.micro.config import RawConfig, decode_payload, encode_payload, marshal_payload, unmarshal_payload
+from firefly.micro.invocation import DNS, RemoteServiceRegistry
 
 
 def test_payload_round_trip() -> None:

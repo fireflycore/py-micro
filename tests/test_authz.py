@@ -7,9 +7,9 @@ from datetime import UTC, datetime, timedelta
 import pytest
 from cryptography.hazmat.primitives.asymmetric.ed25519 import Ed25519PrivateKey
 
-from firefly_micro import constants
-from firefly_micro.authz import AuthzSignVerificationOptions, verify_authz_sign
-from firefly_micro.errors import AuthzSignExpiredError, AuthzSignInvalidClaimsError
+from firefly.micro import constants
+from firefly.micro.authz import AuthzSignVerificationOptions, verify_authz_sign
+from firefly.micro.errors import AuthzSignExpiredError, AuthzSignInvalidClaimsError
 
 
 def test_verify_authz_sign_user_claims() -> None:
