@@ -23,6 +23,7 @@ build-backend = "hatchling.build"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/firefly"]
+artifacts = ["src/firefly/micro/py.typed"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
