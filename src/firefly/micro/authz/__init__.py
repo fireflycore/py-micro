@@ -18,6 +18,12 @@ from .sign import (
     AuthzUserContext,
     verify_authz_sign,
 )
+from .verification import (
+    VerificationConfig,
+    VerificationOptions,
+    must_new_verification_options,
+    new_verification_options,
+)
 
 __all__ = [
     "DEFAULT_CLOCK_SKEW",
@@ -32,6 +38,10 @@ __all__ = [
     "CachedServiceAuthorityProvider",
     "ServiceAuthorityFetch",
     "ServiceAuthorityToken",
+    "VerificationConfig",
+    "VerificationOptions",
     "load_ed25519_public_key",
+    "must_new_verification_options",
+    "new_verification_options",
     "verify_authz_sign",
 ]
