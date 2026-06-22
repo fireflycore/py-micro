@@ -66,3 +66,30 @@ class InvalidConfigKeyError(FireflyMicroError):
 
 class InvalidRawConfigError(FireflyMicroError):
     """配置 Raw 内容不满足持久化契约。"""
+
+
+# 运行时配置错误独立保留，方便 py-layout 启动期把配置问题映射为快速失败。
+class BootstrapConfigError(FireflyMicroError):
+    """应用、内核或服务启动配置不满足 Firefly 基线。"""
+
+
+# 配置客户端错误用于统一表达公共配置抽象的装配问题。
+class ConfigStoreMissingError(FireflyMicroError):
+    """配置客户端缺少底层 Store 实现。"""
+
+
+# invocation 错误按 Go 版命名拆分，便于调用方做精确告警和降级处理。
+class ConnectionManagerClosedError(FireflyMicroError):
+    """连接管理器已经关闭，不能再创建新连接。"""
+
+
+class InvokerDialerMissingError(FireflyMicroError):
+    """调用器缺少连接获取依赖。"""
+
+
+class InvokeMethodEmptyError(FireflyMicroError):
+    """远程调用方法名为空。"""
+
+
+class RemoteServiceNotFoundError(FireflyMicroError):
+    """未找到指定远程业务服务。"""
